@@ -83,6 +83,7 @@ rsync_upload: publish
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --cvs-exclude --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
 publish_to_ghp: publish
-	ghp-import output -b master -p -f
+	ghp-import output -f -m 'Update content' && \
+	git push -f origin gh-pages:master
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish ssh_upload rsync_upload
