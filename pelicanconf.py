@@ -27,11 +27,11 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
-
-SOCIAL = (('twitter', 'https://twitter.com/maq123_'),
-      ('github', 'https://github.com/maq123'),)
+#SOCIAL = (('You can add links in your config file', '#'),
+#          ('Another social link', '#'),)
+#
+#SOCIAL = (('twitter', 'https://twitter.com/maq123_'),
+#      ('github', 'https://github.com/maq123'),)
 
 DEFAULT_PAGINATION = False
 
@@ -44,5 +44,5 @@ EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 #specific stuff for pelican-mg
 TAG_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
-DIRECT_TEMPLATES = ('index', 'categories', 'archives', 'search', 'tipue_search')
+DIRECT_TEMPLATES = ('index', 'categories', 'archives')
 TIPUE_SEARCH_SAVE_AS = 'tipue_search.json'
